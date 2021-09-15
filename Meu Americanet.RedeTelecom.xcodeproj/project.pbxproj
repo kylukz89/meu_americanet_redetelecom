@@ -3,29 +3,87 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD1709AF26D3177D007E50CE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1709AE26D3177D007E50CE /* LoginViewModel.swift */; };
+		BD1709B126D31862007E50CE /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1709B026D31862007E50CE /* Observable.swift */; };
+		BD1709B326D318B8007E50CE /* UsuarioCredenciais.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1709B226D318B8007E50CE /* UsuarioCredenciais.swift */; };
 		BD1D7F0B26D2741A00FE77F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D7F0A26D2741A00FE77F8 /* AppDelegate.swift */; };
 		BD1D7F0D26D2741A00FE77F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D7F0C26D2741A00FE77F8 /* SceneDelegate.swift */; };
-		BD1D7F0F26D2741A00FE77F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D7F0E26D2741A00FE77F8 /* ViewController.swift */; };
-		BD1D7F1226D2741A00FE77F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1D7F1026D2741A00FE77F8 /* Main.storyboard */; };
+		BD1D7F0F26D2741A00FE77F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D7F0E26D2741A00FE77F8 /* LoginViewController.swift */; };
 		BD1D7F1526D2741A00FE77F8 /* Meu_Americanet_RedeTelecom.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD1D7F1326D2741A00FE77F8 /* Meu_Americanet_RedeTelecom.xcdatamodeld */; };
 		BD1D7F1726D2741F00FE77F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1D7F1626D2741F00FE77F8 /* Assets.xcassets */; };
 		BD1D7F1A26D2741F00FE77F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1D7F1826D2741F00FE77F8 /* LaunchScreen.storyboard */; };
+		BD1D7F2826D2791500FE77F8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D7F2726D2791500FE77F8 /* Endpoint.swift */; };
+		BD1D7F2D26D2792100FE77F8 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D7F2926D2792100FE77F8 /* Alert.swift */; };
+		BD1D7F2E26D2792100FE77F8 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D7F2A26D2792100FE77F8 /* HttpClient.swift */; };
+		BD1D7F2F26D2792100FE77F8 /* ManipuladorJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D7F2B26D2792100FE77F8 /* ManipuladorJSON.swift */; };
+		BD1D7F3026D2792100FE77F8 /* VariaveisGlobais.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D7F2C26D2792100FE77F8 /* VariaveisGlobais.swift */; };
+		BD44463526E2968400C1730F /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD44463426E2968400C1730F /* 5.jpg */; };
+		BD44463726E2AFF100C1730F /* Contrato.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD44463626E2AFF100C1730F /* Contrato.swift */; };
+		BD44463926E2B3B800C1730F /* ContratoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD44463826E2B3B800C1730F /* ContratoAPI.swift */; };
+		BD44464026E3904A00C1730F /* ic_plano_azul.png in Resources */ = {isa = PBXBuildFile; fileRef = BD44463F26E3904A00C1730F /* ic_plano_azul.png */; };
+		BDC2F8BE26D32512004E0BDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDC2F8BD26D32512004E0BDE /* Main.storyboard */; };
+		BDC2F8C026D325F9004E0BDE /* logintelapng.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC2F8BF26D325F9004E0BDE /* logintelapng.png */; };
+		BDC2F8C426D334C7004E0BDE /* UsuarioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2F8C326D334C7004E0BDE /* UsuarioAPI.swift */; };
+		BDC2F8CC26D42E79004E0BDE /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2F8CB26D42E79004E0BDE /* Mask.swift */; };
+		BDC2F8D026D57677004E0BDE /* ic_notificacao_sino.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC2F8CF26D57677004E0BDE /* ic_notificacao_sino.png */; };
+		BDC2F8D226D576B8004E0BDE /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2F8D126D576B8004E0BDE /* PrincipalViewController.swift */; };
+		BDC2F8D826D57D10004E0BDE /* splash_america.png in Resources */ = {isa = PBXBuildFile; fileRef = BDC2F8D726D57D10004E0BDE /* splash_america.png */; };
+		BDC2F8DA26D591AA004E0BDE /* Ferramentas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2F8D926D591AA004E0BDE /* Ferramentas.swift */; };
+		BDC2F8DC26D67252004E0BDE /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC2F8DB26D67252004E0BDE /* Usuario.swift */; };
+		BDF91F1B26E5AED800C1CB53 /* ContratoUICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF91F1A26E5AED800C1CB53 /* ContratoUICollectionView.swift */; };
+		BDF91F1D26E9A89A00C1CB53 /* ic_rede.png in Resources */ = {isa = PBXBuildFile; fileRef = BDF91F1C26E9A89A00C1CB53 /* ic_rede.png */; };
+		BDF91F1F26F17F3F00C1CB53 /* ContratoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF91F1E26F17F3F00C1CB53 /* ContratoCell.swift */; };
+		BDF91F2126F1821300C1CB53 /* BotoesMenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF91F2026F1821300C1CB53 /* BotoesMenuCollectionView.swift */; };
+		BDF91F2326F1822400C1CB53 /* BotaoMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF91F2226F1822400C1CB53 /* BotaoMenuCell.swift */; };
+		BDFB3D3426DC74FC00449072 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB3D3326DC74FC00449072 /* Dynamic.swift */; };
+		BDFB3D3626DC752E00449072 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFB3D3526DC752E00449072 /* BindingTextField.swift */; };
+		D2B5511F293BA124A1DCB9A6 /* Pods_Meu_Americanet_RedeTelecom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E432AB20A20CE6BC8FEEB4F7 /* Pods_Meu_Americanet_RedeTelecom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C850ADA38EBFD6E8661E557 /* Pods-Meu Americanet.RedeTelecom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meu Americanet.RedeTelecom.debug.xcconfig"; path = "Target Support Files/Pods-Meu Americanet.RedeTelecom/Pods-Meu Americanet.RedeTelecom.debug.xcconfig"; sourceTree = "<group>"; };
+		AA455E286607D532FF1E21EE /* Pods-Meu Americanet.RedeTelecom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meu Americanet.RedeTelecom.release.xcconfig"; path = "Target Support Files/Pods-Meu Americanet.RedeTelecom/Pods-Meu Americanet.RedeTelecom.release.xcconfig"; sourceTree = "<group>"; };
+		BD1709AE26D3177D007E50CE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		BD1709B026D31862007E50CE /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		BD1709B226D318B8007E50CE /* UsuarioCredenciais.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioCredenciais.swift; sourceTree = "<group>"; };
 		BD1D7F0726D2741A00FE77F8 /* Meu Americanet.RedeTelecom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meu Americanet.RedeTelecom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1D7F0A26D2741A00FE77F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD1D7F0C26D2741A00FE77F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD1D7F0E26D2741A00FE77F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BD1D7F1126D2741A00FE77F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD1D7F0E26D2741A00FE77F8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD1D7F1426D2741A00FE77F8 /* Meu_Americanet_RedeTelecom.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Meu_Americanet_RedeTelecom.xcdatamodel; sourceTree = "<group>"; };
 		BD1D7F1626D2741F00FE77F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD1D7F1926D2741F00FE77F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD1D7F1B26D2741F00FE77F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD1D7F2726D2791500FE77F8 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = "Meu Americanet.RedeTelecom/API/Endpoint.swift"; sourceTree = SOURCE_ROOT; };
+		BD1D7F2926D2792100FE77F8 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		BD1D7F2A26D2792100FE77F8 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		BD1D7F2B26D2792100FE77F8 /* ManipuladorJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManipuladorJSON.swift; sourceTree = "<group>"; };
+		BD1D7F2C26D2792100FE77F8 /* VariaveisGlobais.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariaveisGlobais.swift; sourceTree = "<group>"; };
+		BD44463426E2968400C1730F /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		BD44463626E2AFF100C1730F /* Contrato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contrato.swift; sourceTree = "<group>"; };
+		BD44463826E2B3B800C1730F /* ContratoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContratoAPI.swift; sourceTree = "<group>"; };
+		BD44463F26E3904A00C1730F /* ic_plano_azul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_plano_azul.png; sourceTree = "<group>"; };
+		BDC2F8BD26D32512004E0BDE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BDC2F8BF26D325F9004E0BDE /* logintelapng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logintelapng.png; sourceTree = "<group>"; };
+		BDC2F8C326D334C7004E0BDE /* UsuarioAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioAPI.swift; sourceTree = "<group>"; };
+		BDC2F8CB26D42E79004E0BDE /* Mask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mask.swift; sourceTree = "<group>"; };
+		BDC2F8CF26D57677004E0BDE /* ic_notificacao_sino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_notificacao_sino.png; sourceTree = "<group>"; };
+		BDC2F8D126D576B8004E0BDE /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
+		BDC2F8D726D57D10004E0BDE /* splash_america.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_america.png; sourceTree = "<group>"; };
+		BDC2F8D926D591AA004E0BDE /* Ferramentas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ferramentas.swift; sourceTree = "<group>"; };
+		BDC2F8DB26D67252004E0BDE /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		BDF91F1A26E5AED800C1CB53 /* ContratoUICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContratoUICollectionView.swift; sourceTree = "<group>"; };
+		BDF91F1C26E9A89A00C1CB53 /* ic_rede.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_rede.png; sourceTree = "<group>"; };
+		BDF91F1E26F17F3F00C1CB53 /* ContratoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContratoCell.swift; sourceTree = "<group>"; };
+		BDF91F2026F1821300C1CB53 /* BotoesMenuCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotoesMenuCollectionView.swift; sourceTree = "<group>"; };
+		BDF91F2226F1822400C1CB53 /* BotaoMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoMenuCell.swift; sourceTree = "<group>"; };
+		BDFB3D3326DC74FC00449072 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		BDFB3D3526DC752E00449072 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
+		E432AB20A20CE6BC8FEEB4F7 /* Pods_Meu_Americanet_RedeTelecom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meu_Americanet_RedeTelecom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +91,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B5511F293BA124A1DCB9A6 /* Pods_Meu_Americanet_RedeTelecom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C4D59344D6DAE78065074CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C850ADA38EBFD6E8661E557 /* Pods-Meu Americanet.RedeTelecom.debug.xcconfig */,
+				AA455E286607D532FF1E21EE /* Pods-Meu Americanet.RedeTelecom.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8962FFFF250A5122B7C20955 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E432AB20A20CE6BC8FEEB4F7 /* Pods_Meu_Americanet_RedeTelecom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD1D7EFE26D2741A00FE77F8 = {
 			isa = PBXGroup;
 			children = (
 				BD1D7F0926D2741A00FE77F8 /* Meu Americanet.RedeTelecom */,
 				BD1D7F0826D2741A00FE77F8 /* Products */,
+				4C4D59344D6DAE78065074CA /* Pods */,
+				8962FFFF250A5122B7C20955 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +136,115 @@
 		BD1D7F0926D2741A00FE77F8 /* Meu Americanet.RedeTelecom */ = {
 			isa = PBXGroup;
 			children = (
-				BD1D7F0A26D2741A00FE77F8 /* AppDelegate.swift */,
-				BD1D7F0C26D2741A00FE77F8 /* SceneDelegate.swift */,
-				BD1D7F0E26D2741A00FE77F8 /* ViewController.swift */,
-				BD1D7F1026D2741A00FE77F8 /* Main.storyboard */,
+				BD1D7F3326D27EE300FE77F8 /* Utils */,
+				BD1D7F2526D2780A00FE77F8 /* API */,
+				BD1D7F2426D277FE00FE77F8 /* Model */,
+				BD1D7F2326D277F700FE77F8 /* ViewModel */,
+				BD1D7F2226D277EF00FE77F8 /* View */,
 				BD1D7F1626D2741F00FE77F8 /* Assets.xcassets */,
-				BD1D7F1826D2741F00FE77F8 /* LaunchScreen.storyboard */,
 				BD1D7F1B26D2741F00FE77F8 /* Info.plist */,
 				BD1D7F1326D2741A00FE77F8 /* Meu_Americanet_RedeTelecom.xcdatamodeld */,
 			);
 			path = "Meu Americanet.RedeTelecom";
+			sourceTree = "<group>";
+		};
+		BD1D7F2226D277EF00FE77F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDF91F1926E5AE9D00C1CB53 /* PrincipalUICollectionView */,
+				BDFB3D3026DC0A8800449072 /* ViewController */,
+				BD1D7F1826D2741F00FE77F8 /* LaunchScreen.storyboard */,
+				BDC2F8BD26D32512004E0BDE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD1D7F2326D277F700FE77F8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD1709AE26D3177D007E50CE /* LoginViewModel.swift */,
+				BD1709B026D31862007E50CE /* Observable.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD1D7F2426D277FE00FE77F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD1709B226D318B8007E50CE /* UsuarioCredenciais.swift */,
+				BDC2F8DB26D67252004E0BDE /* Usuario.swift */,
+				BD44463626E2AFF100C1730F /* Contrato.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BD1D7F2526D2780A00FE77F8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D7F2726D2791500FE77F8 /* Endpoint.swift */,
+				BDC2F8C326D334C7004E0BDE /* UsuarioAPI.swift */,
+				BD44463826E2B3B800C1730F /* ContratoAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BD1D7F2626D2782700FE77F8 /* ToolBox */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D7F2A26D2792100FE77F8 /* HttpClient.swift */,
+				BD1D7F2B26D2792100FE77F8 /* ManipuladorJSON.swift */,
+				BD1D7F2926D2792100FE77F8 /* Alert.swift */,
+				BD1D7F2C26D2792100FE77F8 /* VariaveisGlobais.swift */,
+				BDC2F8CB26D42E79004E0BDE /* Mask.swift */,
+				BDC2F8D926D591AA004E0BDE /* Ferramentas.swift */,
+			);
+			path = ToolBox;
+			sourceTree = "<group>";
+		};
+		BD1D7F3326D27EE300FE77F8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D7F0A26D2741A00FE77F8 /* AppDelegate.swift */,
+				BD1D7F0C26D2741A00FE77F8 /* SceneDelegate.swift */,
+				BD1D7F3426D27EF000FE77F8 /* Images */,
+				BD1D7F2626D2782700FE77F8 /* ToolBox */,
+				BDFB3D3326DC74FC00449072 /* Dynamic.swift */,
+				BDFB3D3526DC752E00449072 /* BindingTextField.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BD1D7F3426D27EF000FE77F8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BDF91F1C26E9A89A00C1CB53 /* ic_rede.png */,
+				BD44463426E2968400C1730F /* 5.jpg */,
+				BDC2F8CF26D57677004E0BDE /* ic_notificacao_sino.png */,
+				BD44463F26E3904A00C1730F /* ic_plano_azul.png */,
+				BDC2F8D726D57D10004E0BDE /* splash_america.png */,
+				BDC2F8BF26D325F9004E0BDE /* logintelapng.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		BDF91F1926E5AE9D00C1CB53 /* PrincipalUICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				BDF91F1A26E5AED800C1CB53 /* ContratoUICollectionView.swift */,
+				BDF91F1E26F17F3F00C1CB53 /* ContratoCell.swift */,
+				BDF91F2026F1821300C1CB53 /* BotoesMenuCollectionView.swift */,
+				BDF91F2226F1822400C1CB53 /* BotaoMenuCell.swift */,
+			);
+			path = PrincipalUICollectionView;
+			sourceTree = "<group>";
+		};
+		BDFB3D3026DC0A8800449072 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D7F0E26D2741A00FE77F8 /* LoginViewController.swift */,
+				BDC2F8D126D576B8004E0BDE /* PrincipalViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD1D7F1E26D2741F00FE77F8 /* Build configuration list for PBXNativeTarget "Meu Americanet.RedeTelecom" */;
 			buildPhases = (
+				887F729C7C0C00D458203319 /* [CP] Check Pods Manifest.lock */,
 				BD1D7F0326D2741A00FE77F8 /* Sources */,
 				BD1D7F0426D2741A00FE77F8 /* Frameworks */,
 				BD1D7F0526D2741A00FE77F8 /* Resources */,
+				1F9F39668A8D493611C3C80B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,37 +306,98 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD44464026E3904A00C1730F /* ic_plano_azul.png in Resources */,
+				BDC2F8BE26D32512004E0BDE /* Main.storyboard in Resources */,
 				BD1D7F1A26D2741F00FE77F8 /* LaunchScreen.storyboard in Resources */,
+				BDC2F8D826D57D10004E0BDE /* splash_america.png in Resources */,
 				BD1D7F1726D2741F00FE77F8 /* Assets.xcassets in Resources */,
-				BD1D7F1226D2741A00FE77F8 /* Main.storyboard in Resources */,
+				BD44463526E2968400C1730F /* 5.jpg in Resources */,
+				BDC2F8D026D57677004E0BDE /* ic_notificacao_sino.png in Resources */,
+				BDF91F1D26E9A89A00C1CB53 /* ic_rede.png in Resources */,
+				BDC2F8C026D325F9004E0BDE /* logintelapng.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F9F39668A8D493611C3C80B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meu Americanet.RedeTelecom/Pods-Meu Americanet.RedeTelecom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meu Americanet.RedeTelecom/Pods-Meu Americanet.RedeTelecom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meu Americanet.RedeTelecom/Pods-Meu Americanet.RedeTelecom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		887F729C7C0C00D458203319 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meu Americanet.RedeTelecom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD1D7F0326D2741A00FE77F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD1D7F0F26D2741A00FE77F8 /* ViewController.swift in Sources */,
+				BD1709B126D31862007E50CE /* Observable.swift in Sources */,
+				BDFB3D3626DC752E00449072 /* BindingTextField.swift in Sources */,
+				BD1D7F0F26D2741A00FE77F8 /* LoginViewController.swift in Sources */,
+				BD1D7F2D26D2792100FE77F8 /* Alert.swift in Sources */,
+				BDFB3D3426DC74FC00449072 /* Dynamic.swift in Sources */,
 				BD1D7F0B26D2741A00FE77F8 /* AppDelegate.swift in Sources */,
+				BD1D7F2826D2791500FE77F8 /* Endpoint.swift in Sources */,
+				BD1D7F2E26D2792100FE77F8 /* HttpClient.swift in Sources */,
+				BD44463926E2B3B800C1730F /* ContratoAPI.swift in Sources */,
+				BDF91F1B26E5AED800C1CB53 /* ContratoUICollectionView.swift in Sources */,
+				BDC2F8C426D334C7004E0BDE /* UsuarioAPI.swift in Sources */,
+				BDF91F1F26F17F3F00C1CB53 /* ContratoCell.swift in Sources */,
+				BD1709B326D318B8007E50CE /* UsuarioCredenciais.swift in Sources */,
+				BDF91F2326F1822400C1CB53 /* BotaoMenuCell.swift in Sources */,
+				BDC2F8D226D576B8004E0BDE /* PrincipalViewController.swift in Sources */,
+				BD44463726E2AFF100C1730F /* Contrato.swift in Sources */,
 				BD1D7F1526D2741A00FE77F8 /* Meu_Americanet_RedeTelecom.xcdatamodeld in Sources */,
+				BD1D7F3026D2792100FE77F8 /* VariaveisGlobais.swift in Sources */,
+				BDF91F2126F1821300C1CB53 /* BotoesMenuCollectionView.swift in Sources */,
+				BD1D7F2F26D2792100FE77F8 /* ManipuladorJSON.swift in Sources */,
+				BD1709AF26D3177D007E50CE /* LoginViewModel.swift in Sources */,
+				BDC2F8DC26D67252004E0BDE /* Usuario.swift in Sources */,
 				BD1D7F0D26D2741A00FE77F8 /* SceneDelegate.swift in Sources */,
+				BDC2F8CC26D42E79004E0BDE /* Mask.swift in Sources */,
+				BDC2F8DA26D591AA004E0BDE /* Ferramentas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BD1D7F1026D2741A00FE77F8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD1D7F1126D2741A00FE77F8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD1D7F1826D2741F00FE77F8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +527,7 @@
 		};
 		BD1D7F1F26D2741F00FE77F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C850ADA38EBFD6E8661E557 /* Pods-Meu Americanet.RedeTelecom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,12 +541,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Igor-Maximo.Meu-Americanet-RedeTelecom";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		BD1D7F2026D2741F00FE77F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA455E286607D532FF1E21EE /* Pods-Meu Americanet.RedeTelecom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,7 +561,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Igor-Maximo.Meu-Americanet-RedeTelecom";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

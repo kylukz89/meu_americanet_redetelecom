@@ -1,35 +1,24 @@
-//
-//  Credentials.swift
-//  Meu Americanet.RedeTelecom
-//
-//  Created by Igor Maximo on 22/08/21.
-//
-
- 
-
-
 
 import Foundation
 
-struct UsuarioCredenciais : Decodable {
+struct UsuarioCredenciais {
     var campoCPFCNPJ: String = ""
     var campoSenha: String = ""
-}
-
-// MARK: - Datum
-struct CredenciaisData: Decodable {
     
-    let campoCPFCNPJ: String
-    let campoSenha: String
-    let codClie: String
-    let razaoSocialNome: String
-
-    enum CodingKeys: String, CodingKey {
-        
-        case campoCPFCNPJ = "CNPJ_CPF_CLIE"
-        case campoSenha = "ASSINANTE_SENHA_PORTAL"
-        case codClie = "COD_CLIE"
-        case razaoSocialNome = "RZAO_SOCL_CLIE"
+    init(campoCPFCNPJ :String, campoSenha: String) {
+        self.campoCPFCNPJ = campoCPFCNPJ
+        self.campoSenha = campoSenha
     }
 }
+ 
+// MARK: - Datum
+struct UsuarioAutenticacao: Decodable {
+    
+    let CNPJ_CPF_CLIE: String
+    let ASSINANTE_SENHA_PORTAL: String
+    let COD_CLIE: Int
+    let RZAO_SOCL_CLIE: String
+ 
+}
 
+ 
