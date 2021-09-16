@@ -16,12 +16,12 @@ class VariaveisGlobais {
     
     //////////////////////
     // Controle de IPs
-    public static var IP = "http://187.95.0.22/producao/central/";
-    public static var IP_FATURA_DOWNLOADED = "http://187.95.0.22/producao/central/App/APIs/Downloader/FaturasDownloaded"; // central
+    public static var IP = "URL";
+    public static var IP_FATURA_DOWNLOADED = "URL"; // central
     //////////////////////
     // Autenticação Back-end
-    private static var USER = "k6NZWq95y9x2NMxF9rRg";
-    private static var PASS = "1MiTgbYI4jWCKn3RCdub";
+    private static var USER = "";
+    private static var PASS = "";
     public static var AUT_GET = "&user=" + USER + "&pass=" + PASS;
     public static var TEMPO_MAX_EXPIRAR = 300; // 5 minutos - Tempo máximo de inatividade do app sem expirar
     //////////////////////
