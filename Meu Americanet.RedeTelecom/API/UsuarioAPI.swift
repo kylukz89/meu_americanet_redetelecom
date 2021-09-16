@@ -17,14 +17,29 @@
         var request = URLRequest(url: URL(string: Endpoint.SELECT_AUTENTICACAO)!)
         request.httpMethod = "POST"
         request.httpBody = postString.data(using: .utf8)
-         
+        
         URLSession.shared.dataTask(with: request) { (data, urlResponse, error) in
-            if let data = data {
+            
+            guard let data = data else {
+                // no data
+                return
+            }
+            do {
                 let jsonDecoder = JSONDecoder()
                 let authData = try! jsonDecoder.decode([UsuarioAutenticacao].self, from: data)
                 completionHandler(true, authData)
+            } catch {
                 
             }
+            
+            
+            
+            //            if let data = data {
+            //                let jsonDecoder = JSONDecoder()
+            //                let authData = try! jsonDecoder.decode([UsuarioAutenticacao].self, from: data)
+            //                completionHandler(true, authData)
+            //
+            //            }
         }.resume()
     }
     

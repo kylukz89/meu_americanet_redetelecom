@@ -13,6 +13,7 @@
     var itemSize = CGSize(width: 0, height: 0)
     var contratoItens = [ContratoItens]()
     var botoesMenuItens = [BotoesItens]()
+    /////////
     @IBOutlet weak var collectionViewContratos: UICollectionView!
     @IBOutlet weak var collectionViewBotoesMenu: UICollectionView!
     @IBOutlet weak var labelNomeUsuario: UILabel!
@@ -97,11 +98,12 @@
         view.layoutIfNeeded()
         let width = collectionViewBotoesMenu.bounds.size.width
         let height = collectionViewBotoesMenu.bounds.size.height // width * (9/16)
-        itemSize = CGSize(width: width, height: height)
+        itemSize = CGSize(width: 125, height: height)
         view.layoutIfNeeded()
         collectionViewBotoesMenu.reloadData()
     }
  }
+  
  
  extension PrincipalViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -130,15 +132,13 @@
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // Valida qual collectionView usar
-        if self.cellId == 1 {
+        if collectionView == collectionViewContratos {
             let count = contratoItens.count
             pageControl.numberOfPages = count
             pageControl.isHidden = !(count > 1)
             return count
         } else {
-            let count = botoesMenuItens.count
-            //            pageControl.numberOfPages = count
-            //            pageControl.isHidden = !(count > 1)
+            let count = botoesMenuItens.count 
             return count
         }
         
@@ -151,7 +151,7 @@
     @available(iOS 6.0, *)
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // Valida qual collectionView usar
-        if self.cellId == 1 {
+        if collectionView == collectionViewContratos {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AppStoreCell", for: indexPath) as! ContratoCell
             cell.setUp(contratoItens[indexPath.row])
             return cell
@@ -170,7 +170,7 @@
         return true
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { 
         collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
     }
     

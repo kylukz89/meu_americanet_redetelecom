@@ -81,8 +81,9 @@ class LoginViewModel {
         semaphore.wait()
         // Compara as credenciais retornadas da API para validar
         if (String(usuarioAuth?.CNPJ_CPF_CLIE ?? "") != campoCPFCNPJ.value || String(usuarioAuth?.ASSINANTE_SENHA_PORTAL ?? "") != campoSenha.value) {
+            print("==============> "+String(usuarioAuth?.CNPJ_CPF_CLIE ?? ""))
             // Valida apenas a senha
-            if (String(usuarioAuth?.CNPJ_CPF_CLIE ?? "") != "" || String(usuarioAuth?.CNPJ_CPF_CLIE ?? "").isEmpty) {
+            if (String(usuarioAuth?.CNPJ_CPF_CLIE ?? "") == "" || String(usuarioAuth?.CNPJ_CPF_CLIE ?? "").isEmpty) {
                 self.erroCredenciaisLogin.value = "CPF/CNPJ não encontrado!"
                 return .Incorreto
             }
